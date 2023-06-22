@@ -1,0 +1,79 @@
+body {
+    background-image : url("bg.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    color: white;
+    user-select: none;
+    font-family: arial;
+    text-shadow: 0px 0px 10px white;
+    
+}
+
+
+
+img{
+  margin-left: 300px;
+ animation-name: mov;
+ animation-duration: 2s;
+ animation-direction: alternate;
+ animation-iteration-count: infinite;
+}
+
+@keyframes mov {
+ 20%{
+   transform: translateY(10px);
+ } 
+ 40%{
+   transform: translateX(10px);
+   transform: translateY(-10px);
+ }
+ 60%{
+   transform: translateX(0px);
+   transform: translateY(-20px);
+ }
+ 80%{
+   transform: translateX(-20px);
+   transform: translateY(0px);
+ }
+ 100%{
+   transform: translateX(0px);
+   transform: translateY(10px);
+ }
+}
+
+
+details{
+  background-color: whitesmoke;
+  color: black;
+  font-weight: bold;
+  padding: 8px;
+  cursor: pointer;
+}
+
+.click{
+  cursor: pointer;
+}
+.click:hover{
+  /* background-color: dodgerblue; */
+  border: 3px solid GREEN;
+  box-shadow: 0px 0px 10px 5px GREEN;
+  color: black;
+  background-color: black;
+}
+
+button{
+  height: 100px;
+  width: 200px;
+  background-color: white;
+  border: 0px;
+  color: black;
+  font-weight: bold;
+  font-size: 20px;
+  cursor: pointer;
+  box-shadow: 0px 0px 10px 2px white;
+}
+button:hover{
+  border: 10px solid white;
+  color: white;
+  background-color: transparent;
+}
